@@ -1,0 +1,8 @@
+extends layout
+
+block polybuild
+  link(rel='import', href='/elements/elements-index.build.html')
+
+block content
+  main-element
+  name-card(first="{{f_name}}" last="{{l_name}}" bind-polymer)

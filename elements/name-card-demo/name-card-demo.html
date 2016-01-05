@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id='name-card-demo'>
+        <template>
+                <p>
+                <label for="f_name">First Name:</label>
+                <input type="text" ng-model="f_name">
+                </p>
+                <p>
+                <label for="l_name">Last Name:</label>
+                <input type="text" ng-model="l_name">
+                </p>
+        </template>
+        <script>
+                (function() {
+                 'use strict';
+
+                 Polymer({
+                        is: 'name-card-demo'
+                 });
+                })();
+        </script>
+</dom-module>

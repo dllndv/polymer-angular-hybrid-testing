@@ -1,0 +1,13 @@
+doctype html
+html(ng-app='app')
+  head
+    title= title
+    link(rel='shortcut icon', href='/images/favicon.png')
+    link(rel='stylesheet', href='/css/styles.css')
+    block polybuild
+    script(src='bower_components/webcomponentsjs/webcomponents.min.js')
+    script(src='bower_components/angular/angular.js')
+    script(src='bower_components/angular-bind-polymer/angular_bind_polymer.js')
+    script(src='/js/app.js')
+  body
+    block content
