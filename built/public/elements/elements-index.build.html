@@ -14,18 +14,7 @@ The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
 The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
---></head><body><div hidden="" by-vulcanize=""><dom-module id="name-card-demo" assetpath="name-card-demo/">
-        <template>
-                <p>
-                <label for="f_name">First Name:</label>
-                <input type="text" ng-model="f_name">
-                </p>
-                <p>
-                <label for="l_name">Last Name:</label>
-                <input type="text" ng-model="l_name">
-                </p>
-        </template>
-        </dom-module><dom-module id="header-icons" assetpath="header-icons/">
+--></head><body><div hidden="" by-vulcanize=""><dom-module id="header-icons" assetpath="header-icons/">
   <template>
     <style>:host {display: block;}.logo {height: 150px;}.sign {height: 75px;padding: 35px;}</style>
     <img class="logo" src="/images/polymer.svg">
@@ -35,7 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
 
   </dom-module>
-<dom-module id="name-card" assetpath="name-card/">  
+<dom-module id="name-card-polymer" assetpath="name-card-polymer/">  
   <link rel="import" type="css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <template>
     <p>
@@ -48,4 +37,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <button on-click="toggleEdit" class="editBtn"><i class="fa fa-pencil"></i></button>
     </p>
   </template>
-  </dom-module>  </div><script src="elements-index.build.js"></script></body></html>
+  </dom-module>  <dom-module id="name-card-angular" assetpath="name-card-angular/">
+        <template>
+                <p>
+                <label for="f_name">First Name:</label>
+                <input type="text" ng-model="f_name">
+                </p>
+                <p>
+                <label for="l_name">Last Name:</label>
+                <input type="text" ng-model="l_name">
+                </p>
+        </template>
+        </dom-module></div><script src="elements-index.build.js"></script></body></html>
