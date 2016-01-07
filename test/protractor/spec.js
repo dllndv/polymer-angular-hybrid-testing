@@ -1,9 +1,9 @@
 var angularFirstName = element(by.model('f_name'));
 var angularLastName = element(by.model('l_name'));
-var polymerFirstName = element.all(by.css('input[class="style-scope name-card"]')).get(0);
-var polymerLastName = element.all(by.css('input[class="style-scope name-card"]')).get(1);
-var polymerFullName = element(by.css('span[class="style-scope name-card ng-binding"]'));
-var editButton = element(by.css('button[class="style-scope name-card"]'));
+var polymerFirstName = element(by.className('polyFName'));
+var polymerLastName = element(by.className('polyLName'));
+var polymerFullName = element(by.className('polyFullName'));
+var editButton = element(by.className('editBtn'));
 var EC = protractor.ExpectedConditions;
 
 describe('polymer-angular hybrid test',function(){

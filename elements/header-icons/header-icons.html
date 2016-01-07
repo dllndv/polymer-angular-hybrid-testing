@@ -1,0 +1,33 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../name-card-demo/name-card-demo.html">
+
+<dom-module id="header-icons">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      .logo {
+        height: 150px;
+      }
+      .sign {
+        height: 75px;
+        padding: 35px;
+      }
+    </style>
+    <img class="logo" src="/images/polymer.svg"/>
+    <img class="sign" src="/images/plus.svg"/>
+    <img class="logo" src="/images/angular-logo.svg"/>
+    <img class="sign" src="/images/equal.svg"/>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'header-icons'
+      });
+    })();
+  </script>
+</dom-module>

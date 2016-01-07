@@ -25,13 +25,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <input type="text" ng-model="l_name">
                 </p>
         </template>
-        </dom-module><dom-module id="main-element" assetpath="main-element/">
+        </dom-module><dom-module id="header-icons" assetpath="header-icons/">
   <template>
-    <style>:host {display: block;}</style>
-    <img src="/images/polymer.svg">
-    <content>
-      <name-card-demo>
-    </name-card-demo></content>
+    <style>:host {display: block;}.logo {height: 150px;}.sign {height: 75px;padding: 35px;}</style>
+    <img class="logo" src="/images/polymer.svg">
+    <img class="sign" src="/images/plus.svg">
+    <img class="logo" src="/images/angular-logo.svg">
+    <img class="sign" src="/images/equal.svg">
   </template>
 
   </dom-module>
@@ -40,12 +40,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template>
     <p>
       <template is="dom-if" if="{{!edit}}">
-        <span>{{fullname}}</span>
+        <span class="polyFullName">{{fullname}}</span>
       </template>
       <template is="dom-if" if="{{edit}}">
-        <label>First:</label> <input type="text" value="{{first::input}}"> <label>Last:</label> <input type="text" value="{{last::input}}">
+        <label>First:</label> <input type="text" class="polyFName" value="{{first::input}}"> <label>Last:</label> <input type="text" class="polyLName" value="{{last::input}}">
       </template>
-      <button on-click="toggleEdit"><i class="fa fa-pencil"></i></button>
+      <button on-click="toggleEdit" class="editBtn"><i class="fa fa-pencil"></i></button>
     </p>
   </template>
   </dom-module>  </div><script src="elements-index.build.js"></script></body></html>
