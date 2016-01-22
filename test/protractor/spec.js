@@ -8,7 +8,7 @@ var EC = protractor.ExpectedConditions;
 
 describe('polymer-angular hybrid test',function(){
 	beforeAll(function(){
-		browser.get('http://localhost:5000/');
+		browser.get('http://localhost:5000/?dom=shadow');
 	});
 	
 	it('should start blank', function(){
@@ -40,4 +40,9 @@ describe('polymer-angular hybrid test',function(){
 		expect(angularFirstName.getAttribute('value')).toEqual('Apollo');
 		expect(angularLastName.getAttribute('value')).toEqual('Creed');
 	});
+    fit('should be able to pierce the shadow dom', function(){
+    //    To make use of testing the deepCss selector, you must tell polymer to use the shadow dom using the dom=shadow in the url.
+       var h1s = element.all(by.deepCss('h1'));
+       expect(h1s.count()).toEqual(5); 
+    });
 });

@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="shadow-element-inner">
+    <template>  
+        <h1>Inside the Shadow DOM</h1>
+        <div>
+            <h1>Deeper...</h1>
+            <div>
+                <h1>Even Deeper...</h1>
+                <div>
+                    <h1 id="deepest">Deepest!</h1>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        (function(){
+            'use strict';
+            Polymer ({
+                is: 'shadow-element-inner'
+            });
+        })();
+    </script>
+</dom-module>

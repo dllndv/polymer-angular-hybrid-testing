@@ -6,3 +6,5 @@ var n=this._rootDataHost;return n?n._scopeElementClass(t,e):void 0},stamp:functi
 !function(){"use strict";Polymer({is:"header-icons"})}();
 Polymer({is:"name-card-polymer",properties:{first:{type:String,reflectToAttribute:!0},last:{type:String,reflectToAttribute:!0},fullname:{computed:"_computeFullName(first, last)"}},ready:function(){this.edit=!1},toggleEdit:function(){return this.edit=!this.edit},_computeFullName:function(t,e){return t+" "+e}});
 !function(){"use strict";Polymer({is:"name-card-angular"})}();
+!function(){"use strict";Polymer({is:"shadow-element-outer"})}();
+!function(){"use strict";Polymer({is:"shadow-element-inner"})}();

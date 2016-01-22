@@ -48,4 +48,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <input type="text" ng-model="l_name">
                 </p>
         </template>
-        </dom-module></div><script src="elements-index.build.js"></script></body></html>
+        </dom-module><dom-module id="shadow-element-outer" assetpath="shadow-element-outer/">
+    <template>
+        <h1>Outside the Shadow DOM</h1>
+        <shadow-element-inner>
+        </shadow-element-inner>
+    </template>
+    </dom-module><dom-module id="shadow-element-inner" assetpath="shadow-element-inner/">
+    <template>  
+        <h1>Inside the Shadow DOM</h1>
+        <div>
+            <h1>Deeper...</h1>
+            <div>
+                <h1>Even Deeper...</h1>
+                <div>
+                    <h1 id="deepest">Deepest!</h1>
+                </div>
+            </div>
+        </div>
+    </template>
+    </dom-module></div><script src="elements-index.build.js"></script></body></html>
