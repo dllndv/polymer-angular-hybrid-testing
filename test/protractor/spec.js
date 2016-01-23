@@ -40,9 +40,13 @@ describe('polymer-angular hybrid test',function(){
 		expect(angularFirstName.getAttribute('value')).toEqual('Apollo');
 		expect(angularLastName.getAttribute('value')).toEqual('Creed');
 	});
-    fit('should be able to pierce the shadow dom', function(){
+    fit('should not be able to see into the shadow dom with css selector', function(){
+       var h1s = element.all(by.css('h1'));
+       expect(h1s.count()).toEqual(1);
+    });
+    fit('should be able to pierce the shadow dom with deepCss selector', function(){
     //    To make use of testing the deepCss selector, you must tell polymer to use the shadow dom using the dom=shadow in the url.
        var h1s = element.all(by.deepCss('h1'));
-       expect(h1s.count()).toEqual(5); 
+       expect(h1s.count()).toEqual(5);
     });
 });
