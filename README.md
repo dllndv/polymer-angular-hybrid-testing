@@ -8,7 +8,6 @@ Also most of the code I used to make the app came from [this article](http://jcr
 ## Getting Started:
 
 ```
-
 git clone https://github.com/dllndv/polymer-angular-hybrid-testing.git
 cd polymer-angular-hybrid-testing
 npm install
@@ -17,7 +16,6 @@ npm install
 ## To run in dev mode:
 
 ```
-
 gulp dev
 ```
 This builds the app and deploys with gulp, and enables browser-sync. To stop, use `ctrl-c`.
@@ -25,7 +23,6 @@ This builds the app and deploys with gulp, and enables browser-sync. To stop, us
 ## To run in prod mode:
 
 ```
-
 npm start
 ```
  
