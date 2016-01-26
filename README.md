@@ -1,5 +1,5 @@
 # polymer-angular-hybrid-testing
-This is a test app using both polymer and angular to see how we can test both with Protractor. You must have node and bower installed in order to run.
+This is a test app using both polymer and angular to see how we can test both with Protractor. You must have node and bower installed in order to run, and protractor in order to run the tests.
 
 It's built with kd7yva's polymer-startup app, which can be found [here](https://github.com/kd7yva/polymer-startup) along with instructions on how to run the app.
 
@@ -27,3 +27,13 @@ npm start
 ```
  
  For more instructions on how the project is structured, and how to add more web components, see [kd7yva's](https://github.com/kd7yva/polymer-startup) repo for the polymer-startup app.
+ 
+ ## Running Tests
+ 
+ The default location for the protractor tests is `test/protractor/spec.js`
+ To run the tests as they are, make sure protractor is installed, your webdriver-manager is running, and then from the root directory:
+ ```
+ protractor test/protractor/conf.js
+ ```
+ 
+ And there you go! You should see the tests run in a new window, and the shadow dom being pierced by protractor. Feel free to add more web components, more angular things and experiment with how they work together!
