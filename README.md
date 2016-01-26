@@ -26,14 +26,14 @@ This builds the app and deploys with gulp, and enables browser-sync. To stop, us
 npm start
 ```
  
- For more instructions on how the project is structured, and how to add more web components, see [kd7yva's](https://github.com/kd7yva/polymer-startup) repo for the polymer-startup app.
+For more instructions on how the project is structured, and how to add more web components, see [kd7yva's](https://github.com/kd7yva/polymer-startup) repo for the polymer-startup app.
  
- ## Running Tests
+## Running Tests:
  
- The default location for the protractor tests is `test/protractor/spec.js`
- To run the tests as they are, make sure protractor is installed, your webdriver-manager is running, and then from the root directory:
- ```
- protractor test/protractor/conf.js
- ```
+The default location for the protractor tests is `test/protractor/spec.js`
+To run the tests as they are, make sure protractor is installed, your webdriver-manager is running, and then from the root directory:
+```
+protractor test/protractor/conf.js
+```
  
- And there you go! You should see the tests run in a new window, and the shadow dom being pierced by protractor. Feel free to add more web components, more angular things and experiment with how they work together!
+And there you go! You should see the tests run in a new window, and the shadow dom being pierced by protractor. Feel free to add more web components, more angular things and experiment with how they work together!
